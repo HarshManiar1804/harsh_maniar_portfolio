@@ -2,18 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
 body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
-
-@layer base {
-  :root {
-    --radius: 0.5rem;
-  }
+  background-color: #000000;
 }
