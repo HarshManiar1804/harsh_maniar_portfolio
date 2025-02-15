@@ -13,6 +13,8 @@ import {
   SiPostgresql,
   SiDocker,
   SiGithub,
+  SiHtml5,
+  SiCss3,
 } from "react-icons/si";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
@@ -32,6 +34,13 @@ const ProjectsList = () => {
       link: "https://github.com/HarshManiar1804/money_map",
       cover: "/images/moneymap.png",
       background: "bg-indigo-500",
+    },
+    {
+      title: "Caesar Cipher Encoder/Decoder",
+      tech: [SiHtml5, SiCss3, SiJavascript],
+      link: "https://github.com/HarshManiar1804/caesarCipher_EncoderDecoder",
+      cover: "/images/caesar_cipher.png",
+      background: "bg-teal-500",
     },
   ];
 
