@@ -29,7 +29,7 @@ const ProjectsList = () => {
     {
       title: "MoneyMap",
       tech: [SiReact, SiNextdotjs, SiNodedotjs, SiExpress, SiTailwindcss],
-      link: "https://github.com/HarshManiar1804/BookMyDoctor",
+      link: "https://github.com/HarshManiar1804/money_map",
       cover: "/images/moneymap.png",
       background: "bg-indigo-500",
     },
