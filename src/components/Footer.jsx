@@ -1,20 +1,41 @@
+import Link from "next/link";
 import React from "react";
-import Image from "next/image";
+import { SiLinkedin, SiGithub } from "react-icons/si";
 
 const Footer = () => {
+  const socials = [
+    {
+      link: "https://www.linkedin.com/in/harshmaniar210/",
+      label: "LinkedIn",
+      Icon: SiLinkedin,
+    },
+    {
+      link: "https://github.com/HarshManiar1804",
+      label: "GitHub",
+      Icon: SiGithub,
+    },
+  ];
   return (
-    <div className="max-w-[1200px] w-[90%] mx-auto py-[20px] flex flex-wrap gap-[10px] justify-between items-center border-t border-[#1d1d1d]">
-      <a href="">
-        <Image
-          src="/images/logo.png"
-          width={120}
-          height={80}
-          alt="logo"
-          className="max-h-[80px] h-full  object-contain object-center"
-        />
-      </a>
-      <span className="text-[0.9rem] font-[500] text-white">Harsh Maniar</span>
-    </div>
+    <footer className="p-16 flex justify-between items-center gap-3">
+      <h1 className="text-2xl font-bold underline underline-offset-4 decoration-slate-600 text-white">
+        Harsh maniar 👨🏻‍💻
+      </h1>
+      <div className="flex items-center gap-5 text-2xl">
+        {socials.map((social, index) => {
+          const { Icon, link, label } = social;
+          return (
+            <Link
+              key={index}
+              href={link}
+              aria-label={label}
+              className="text-gray-400"
+            >
+              <Icon />
+            </Link>
+          );
+        })}
+      </div>
+    </footer>
   );
 };
 

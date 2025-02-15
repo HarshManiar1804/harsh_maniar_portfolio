@@ -1,13 +1,6 @@
 import React from "react";
 import { FloatingDock } from "@/components/ui/floating-dock";
-import {
-  IconBrandGithub,
-  IconBrandX,
-  IconExchange,
-  IconHome,
-  IconNewSection,
-  IconTerminal2,
-} from "@tabler/icons-react";
+import { IconBrandGithub, IconHome } from "@tabler/icons-react";
 import Image from "next/image";
 import {
   Code2Icon,
@@ -55,21 +48,6 @@ export function Navbar() {
         <MailIcon className="h-full w-full text-neutral-500 dark:text-neutral-300" />
       ),
       href: "#contact",
-    },
-
-    {
-      title: "LinkedIn",
-      icon: (
-        <Linkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "https://www.linkedin.com/in/harshmaniar210/",
-    },
-    {
-      title: "GitHub",
-      icon: (
-        <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />
-      ),
-      href: "https://github.com/HarshManiar1804",
     },
   ];
   return (

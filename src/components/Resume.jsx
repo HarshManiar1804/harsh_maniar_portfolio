@@ -11,7 +11,7 @@ export function Resume() {
         <div className="flex flex-col gap-[30px]">
           <div>
             <h4 className="text-[#f4f4f4] text-[1.8rem] font-[600]">
-              <Cover> Crest Data</Cover>
+              <Cover className="pr-12 pl-12"> Crest Data</Cover>
             </h4>
             <span className="text-blue-400 my-[10px]">Nov 2023 - Dec 2024</span>
             <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
@@ -27,7 +27,7 @@ export function Resume() {
         <div className="flex flex-col gap-[30px]">
           <div>
             <h4 className="text-[#f4f4f4] text-[1.8rem] font-[600]">
-              <Cover>B.Tech in Computer Science</Cover>
+              <Cover className="pr-12 pl-12">B.Tech in Computer Science</Cover>
             </h4>
             <span className="text-blue-400 my-[10px]">
               Aug 2021 - June 2024
@@ -38,7 +38,7 @@ export function Resume() {
           </div>
           <div>
             <h4 className="text-[#f4f4f4] text-[1.8rem] font-[600]">
-              <Cover>Diploma in Computer Science</Cover>
+              <Cover className="pr-12 pl-12">Diploma in Computer Science</Cover>
             </h4>
             <span className="text-blue-400 my-[10px]">
               July 2018 - June 2021
@@ -52,9 +52,9 @@ export function Resume() {
     },
   ];
   return (
-    <div className="w-full" id="resume">
-      <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans ">
-        <Cover className="pr-12 pl-12">Resume</Cover>
+    <div className="w-full " id="resume">
+      <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans ml-[40%]">
+        <Cover className="pr-12 pl-12 ">Resume</Cover>
       </h2>
       <Timeline data={data} />
     </div>

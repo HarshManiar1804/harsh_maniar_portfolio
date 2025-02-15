@@ -93,7 +93,7 @@ export function Contact() {
       id="contact"
     >
       <h2 className="font-bold text-xl text-neutral-800 dark:text-neutral-200 items-center justify-center flex">
-        <Cover>Contact Me</Cover>
+        <Cover className="pr-12 pl-12">Contact Me</Cover>
       </h2>
       {loadingMessage.message && (
         <p

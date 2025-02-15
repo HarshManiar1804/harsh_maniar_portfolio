@@ -1,33 +1,74 @@
-"use client";
 import React from "react";
-import { BackgroundGradient } from "./ui/background-gradient";
-import Image from "next/image";
+import {
+  SiNextdotjs,
+  SiReact,
+  SiTailwindcss,
+  SiGit,
+  SiTypescript,
+  SiJavascript,
+  SiPython,
+  SiNodedotjs,
+  SiExpress,
+  SiMongodb,
+  SiPostgresql,
+  SiGithub,
+} from "react-icons/si";
+import Link from "next/link";
+import { cn } from "@/lib/utils";
+import { DirectionAwareHover } from "./ui/direction-aware-hover";
+const ProjectsList = () => {
+  const projects = [
+    {
+      title: "BookMyDoctor",
+      tech: [
+        SiReact,
+        SiNodedotjs,
+        SiExpress,
+        SiMongodb,
+        SiTypescript,
+        SiTailwindcss,
+      ],
+      link: "https://github.com/HarshManiar1804/BookMyDoctor",
+      cover: "/images/moneymap.png",
+      background: "bg-indigo-500",
+    },
+    {
+      title: "BookMyDoctor",
+      tech: [
+        SiReact,
+        SiNodedotjs,
+        SiExpress,
+        SiMongodb,
+        SiTypescript,
+        SiTailwindcss,
+      ],
+      link: "https://github.com/HarshManiar1804/BookMyDoctor",
+      cover: "/images/moneymap.png",
+      background: "bg-indigo-500",
+    },
+  ];
 
-export function ProjectsList() {
   return (
-    <div>
-      <BackgroundGradient className="rounded-[22px] max-w-sm p-4 sm:p-10 bg-white dark:bg-zinc-900">
-        <Image
-          src={`/jordans.webp`}
-          alt="jordans"
-          height="400"
-          width="400"
-          className="object-contain"
-        />
-        <p className="text-base sm:text-xl text-black mt-4 mb-2 dark:text-neutral-200"></p>
-
-        <p className="text-sm text-neutral-600 dark:text-neutral-400">
-          The Air Jordan 4 Retro Reimagined Bred will release on Saturday,
-          February 17, 2024. Your best opportunity to get these right now is by
-          entering raffles and waiting for the official releases.
-        </p>
-        <button className="rounded-full pl-4 pr-1 py-1 text-white flex items-center space-x-1 bg-black mt-4 text-xs font-bold dark:bg-zinc-800">
-          <span>Buy now </span>
-          <span className="bg-zinc-700 rounded-full text-[0.6rem] px-2 py-0 text-white">
-            $100
-          </span>
-        </button>
-      </BackgroundGradient>
+    <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 max-w-4xl mx-auto py-6 p-5">
+      {projects.map((project, index) => (
+        <Link key={index} href={project.link} className="w-full">
+          <div className={cn("p-5 rounded-md h-full", project.background)}>
+            <DirectionAwareHover
+              imageUrl={project.cover}
+              className="w-full space-y-5 cursor-pointer"
+            >
+              <h1 className="text-2xl font-bold">{project.title}</h1>
+              <div className="flex items-center gap-5 ">
+                {project.tech.map((Icon, index) => (
+                  <Icon key={index} className="w-7 h-7" />
+                ))}
+              </div>
+            </DirectionAwareHover>
+          </div>
+        </Link>
+      ))}
     </div>
   );
-}
+};
+
+export default ProjectsList;
