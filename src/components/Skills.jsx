@@ -16,6 +16,7 @@ import {
   SiMongodb,
   SiPostgresql,
   SiGithub,
+  SiDocker,
 } from "react-icons/si";
 import { HoverEffect } from "./ui/card-hover-effect";
 
@@ -32,7 +33,7 @@ export function Skills() {
     { text: "Github", Icon: SiGithub },
     { text: "Python", Icon: SiPython },
     { text: "Mongodb", Icon: SiMongodb },
-    { text: "Postgresql", Icon: SiPostgresql },
+    { text: "Docker", Icon: SiDocker },
   ];
   return (
     <div className="max-w-5xl mx-auto px-8" id="skills">

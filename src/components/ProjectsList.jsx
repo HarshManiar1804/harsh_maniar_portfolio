@@ -11,6 +11,7 @@ import {
   SiExpress,
   SiMongodb,
   SiPostgresql,
+  SiDocker,
   SiGithub,
 } from "react-icons/si";
 import Link from "next/link";
@@ -20,28 +21,14 @@ const ProjectsList = () => {
   const projects = [
     {
       title: "BookMyDoctor",
-      tech: [
-        SiReact,
-        SiNodedotjs,
-        SiExpress,
-        SiMongodb,
-        SiTypescript,
-        SiTailwindcss,
-      ],
+      tech: [SiReact, SiNodedotjs, SiExpress, SiMongodb, SiTailwindcss],
       link: "https://github.com/HarshManiar1804/BookMyDoctor",
-      cover: "/images/moneymap.png",
-      background: "bg-indigo-500",
+      cover: "/images/bookmydoctor.png",
+      background: "bg-gray-500 p-5",
     },
     {
-      title: "BookMyDoctor",
-      tech: [
-        SiReact,
-        SiNodedotjs,
-        SiExpress,
-        SiMongodb,
-        SiTypescript,
-        SiTailwindcss,
-      ],
+      title: "MoneyMap",
+      tech: [SiReact, SiNextdotjs, SiNodedotjs, SiExpress, SiTailwindcss],
       link: "https://github.com/HarshManiar1804/BookMyDoctor",
       cover: "/images/moneymap.png",
       background: "bg-indigo-500",
