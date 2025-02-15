@@ -15,6 +15,7 @@ import {
   SiGithub,
   SiHtml5,
   SiCss3,
+  SiJsonwebtokens,
 } from "react-icons/si";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
@@ -34,6 +35,13 @@ const ProjectsList = () => {
       link: "https://github.com/HarshManiar1804/money_map",
       cover: "/images/moneymap.png",
       background: "bg-indigo-500",
+    },
+    {
+      title: "Voting App (backend)",
+      tech: [SiNodedotjs, SiExpress, SiMongodb, SiJsonwebtokens],
+      link: "https://github.com/HarshManiar1804/voting-app",
+      cover: "/images/vote.jpeg",
+      background: "bg-pink-500",
     },
     {
       title: "Caesar Cipher Encoder/Decoder",
