@@ -27,28 +27,36 @@ const ProjectsList = () => {
       tech: [SiReact, SiNodedotjs, SiExpress, SiMongodb, SiTailwindcss],
       link: "https://github.com/HarshManiar1804/BookMyDoctor",
       cover: "/images/bookmydoctor.png",
-      background: "bg-gray-500 p-5",
+      background: " ",
     },
     {
       title: "MoneyMap",
       tech: [SiReact, SiNextdotjs, SiNodedotjs, SiExpress, SiTailwindcss],
       link: "https://github.com/HarshManiar1804/money_map",
       cover: "/images/moneymap.png",
-      background: "bg-indigo-500",
+      background: "",
     },
+    {
+      title: "Movie Mania",
+      tech: [SiReact, SiJavascript],
+      link: "https://github.com/HarshManiar1804/MovieMania",
+      cover: "/images/movieMania.png",
+      background: "",
+    },
+
     {
       title: "Voting App (backend)",
       tech: [SiNodedotjs, SiExpress, SiMongodb, SiJsonwebtokens],
       link: "https://github.com/HarshManiar1804/voting-app",
       cover: "/images/vote.jpeg",
-      background: "bg-pink-500",
+      background: "",
     },
     {
       title: "Caesar Cipher Encoder/Decoder",
       tech: [SiHtml5, SiCss3, SiJavascript],
       link: "https://github.com/HarshManiar1804/caesarCipher_EncoderDecoder",
       cover: "/images/caesar_cipher.png",
-      background: "bg-teal-500",
+      background: "",
     },
   ];
 
