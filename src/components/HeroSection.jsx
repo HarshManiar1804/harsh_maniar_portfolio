@@ -43,12 +43,15 @@ const HeroSection = () => {
               About Me
             </h2>
             <p className="max-w-xl mx-auto text-sm md:text-lg text-neutral-700 dark:text-neutral-400 text-start mt-[20px] ">
-              Get the best advices from our experts, including expert artists,
-              painters, marathon enthusiasts and RDX, totally free.
+              I'm Harsh, a Web Developer based in Ahmedabad, India, with a
+              background in Software Development. I work with modern
+              technologies like JavaScript and React.js to build user-friendly
+              web applications.
             </p>
             <p className="max-w-xl mx-auto text-sm md:text-lg text-neutral-700 dark:text-neutral-400 text-start mt-[20px] ">
-              Get the best advices from our experts, including expert artists,
-              painters, marathon enthusiasts and RDX, totally free.
+              I also focus on improving my skills in Data Structures and
+              Algorithms. Keeping up with web development trends and exploring
+              new technologies helps me create efficient and scalable solutions.
             </p>
           </div>
         </div>

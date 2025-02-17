@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { SiLinkedin, SiGithub } from "react-icons/si";
@@ -17,9 +18,13 @@ const Footer = () => {
   ];
   return (
     <footer className="p-16 flex justify-between items-center gap-3">
-      <h1 className="text-2xl font-bold underline underline-offset-4 decoration-slate-600 text-white">
-        Harsh maniar 👨🏻‍💻
-      </h1>
+      <Image
+        src="/images/logo.png"
+        width={120}
+        height={80}
+        alt="logo"
+        className="max-h-[80px] h-full object-contain object-center "
+      />
       <div className="flex items-center gap-5 text-2xl">
         {socials.map((social, index) => {
           const { Icon, link, label } = social;

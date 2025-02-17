@@ -26,37 +26,43 @@ const ProjectsList = () => {
       title: "BookMyDoctor",
       tech: [SiReact, SiNodedotjs, SiExpress, SiMongodb, SiTailwindcss],
       link: "https://github.com/HarshManiar1804/BookMyDoctor",
-      cover: "/images/bookmydoctor.png",
-      background: " ",
+      cover: "/images/bookmydoctor.jpg",
+      background: "bg-zinc-600",
     },
     {
       title: "MoneyMap",
       tech: [SiReact, SiNextdotjs, SiNodedotjs, SiExpress, SiTailwindcss],
       link: "https://github.com/HarshManiar1804/money_map",
-      cover: "/images/moneymap.png",
-      background: "",
+      cover: "/images/money_map.jpg",
+      background: "bg-zinc-600",
     },
     {
       title: "Movie Mania",
       tech: [SiReact, SiJavascript],
       link: "https://github.com/HarshManiar1804/MovieMania",
-      cover: "/images/movieMania.png",
-      background: "",
+      cover: "/images/movie_mania.jpg",
+      background: "bg-zinc-600",
     },
-
     {
       title: "Voting App (backend)",
       tech: [SiNodedotjs, SiExpress, SiMongodb, SiJsonwebtokens],
       link: "https://github.com/HarshManiar1804/voting-app",
-      cover: "/images/vote.jpeg",
-      background: "",
+      cover: "/images/vote.jpg",
+      background: "bg-zinc-600",
     },
     {
       title: "Caesar Cipher Encoder/Decoder",
       tech: [SiHtml5, SiCss3, SiJavascript],
       link: "https://github.com/HarshManiar1804/caesarCipher_EncoderDecoder",
-      cover: "/images/caesar_cipher.png",
-      background: "",
+      cover: "/images/caesar_cipher.jpg",
+      background: "bg-zinc-600",
+    },
+    {
+      title: "Mini Docs App",
+      tech: [SiReact, SiJavascript],
+      link: "https://github.com/HarshManiar1804/docs-mini-app",
+      cover: "/images/doc_mini.jpg",
+      background: "bg-zinc-600",
     },
   ];
 
@@ -64,7 +70,7 @@ const ProjectsList = () => {
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 max-w-4xl mx-auto py-6 p-5">
       {projects.map((project, index) => (
         <Link key={index} href={project.link} className="w-full">
-          <div className={cn("p-5 rounded-md h-full", project.background)}>
+          <div className={cn("p-5 rounded-md h-full ", project.background)}>
             <DirectionAwareHover
               imageUrl={project.cover}
               className="w-full space-y-5 cursor-pointer"
