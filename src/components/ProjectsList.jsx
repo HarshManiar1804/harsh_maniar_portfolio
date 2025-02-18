@@ -69,7 +69,12 @@ const ProjectsList = () => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 max-w-4xl mx-auto py-6 p-5">
       {projects.map((project, index) => (
-        <Link key={index} href={project.link} className="w-full">
+        <Link
+          key={index}
+          href={project.link}
+          className="w-full"
+          target="_blank"
+        >
           <div className={cn("p-5 rounded-md h-full ", project.background)}>
             <DirectionAwareHover
               imageUrl={project.cover}

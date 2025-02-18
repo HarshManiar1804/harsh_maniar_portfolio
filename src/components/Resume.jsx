@@ -17,6 +17,20 @@ export function Resume() {
             <p className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8">
               Software Developer
             </p>
+            <ul className="text-neutral-800 dark:text-neutral-200 text-xs md:text-sm font-normal mb-8 list-disc dark:list-disc">
+              <li>
+                Migrated Splunk application dashboards codebase from Vanilla
+                JavaScript to React.js, incorporating Splunk React UI
+                components, resulting in a 60% reduction in dashboard loading
+                times.
+              </li>
+              <br />
+              <li>
+                Created an engaging front-end application using React.js for
+                advanced machine learning functionality, which improved the
+                website’s access speed by 30% and reduced user onboarding time.
+              </li>
+            </ul>
           </div>
         </div>
       ),

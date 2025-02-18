@@ -30,6 +30,7 @@ const Footer = () => {
           const { Icon, link, label } = social;
           return (
             <Link
+              target="_blank"
               key={index}
               href={link}
               aria-label={label}

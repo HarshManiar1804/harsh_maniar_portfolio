@@ -4,6 +4,8 @@ import { Cover } from "@/components/ui/cover";
 import { ShootingStars } from "@/components/ui/shooting-stars";
 import { StarsBackground } from "@/components/ui/stars-background";
 import Image from "next/image";
+import { Button } from "./ui/moving-border";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -23,6 +25,14 @@ const HeroSection = () => {
           <h2 className="bg-clip-text text-transparent text-start bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-2xl md:text-4xl lg:text-7xl font-sans py-2 md:py-10 relative z-20 font-bold tracking-tight cursor-pointer">
             Harsh Maniar, <br /> Web <Cover>Developer</Cover>.
           </h2>
+          <Link
+            href="/resume.pdf"
+            target="_blank"
+            download="/resume.pdf" // This triggers the file download when clicked
+            className="text-white border-b border-1 border-[#525252] hover:p-[10px] hover:bg-[#5070ff2f] transition-all ease-in-out mr-auto py-[10px] font-[600] cursor-pointer"
+          >
+            Hire Me &rarr;
+          </Link>
         </div>
       </div>
 
