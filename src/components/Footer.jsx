@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { SiLinkedin, SiGithub } from "react-icons/si";
+import { SiLinkedin, SiGithub, SiLinktree } from "react-icons/si";
 
 const Footer = () => {
   const socials = [
@@ -14,6 +14,11 @@ const Footer = () => {
       link: "https://github.com/HarshManiar1804",
       label: "GitHub",
       Icon: SiGithub,
+    },
+    {
+      link: "https://linktr.ee/harshmaniar",
+      label: "Linktree",
+      Icon: SiLinktree,
     },
   ];
   return (

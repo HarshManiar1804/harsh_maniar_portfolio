@@ -28,7 +28,7 @@ const HeroSection = () => {
           <Link
             href="/resume.pdf"
             target="_blank"
-            download="/resume.pdf" // This triggers the file download when clicked
+            // download="/resume.pdf" // This triggers the file download when clicked
             className="text-white border-b border-1 border-[#525252] hover:p-[10px] hover:bg-[#5070ff2f] transition-all ease-in-out mr-auto py-[10px] font-[600] cursor-pointer"
           >
             Hire Me &rarr;
