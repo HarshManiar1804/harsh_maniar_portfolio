@@ -66,10 +66,12 @@ export function Resume() {
     },
   ];
   return (
-    <div className="w-full " id="resume">
-      <h2 className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans ml-[40%]">
-        <Cover className="pr-12 pl-12 ">Resume</Cover>
-      </h2>
+    <div className="w-full" id="resume">
+      <div className="justify-center items-center flex flex-col">
+        <h2 className="bg-clip-text text-transparent text-start bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-2xl md:text-4xl lg:text-7xl font-sans py-2 md:py-10 relative z-20 font-bold tracking-tight cursor-pointer">
+          <Cover className="pr-12 pl-12">Resume</Cover>
+        </h2>
+      </div>
       <Timeline data={data} />
     </div>
   );
