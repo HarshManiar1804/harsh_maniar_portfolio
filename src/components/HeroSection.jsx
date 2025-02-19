@@ -21,7 +21,7 @@ const HeroSection = () => {
           />
         </a>
         <div className="flex flex-col justify-center h-[80%]">
-          <span className="text-[#4e69e0] font-[600]">It's Me</span>
+          <span className="text-[#4e69e0] font-[600]">Its Me</span>
           <h2 className="bg-clip-text text-transparent text-start bg-gradient-to-b from-neutral-900 to-neutral-700 dark:from-neutral-600 dark:to-white text-2xl md:text-4xl lg:text-7xl font-sans py-2 md:py-10 relative z-20 font-bold tracking-tight cursor-pointer">
             Harsh Maniar, <br /> Web <Cover>Developer</Cover>.
           </h2>
@@ -53,7 +53,7 @@ const HeroSection = () => {
               About Me
             </h2>
             <p className="max-w-xl mx-auto text-sm md:text-lg text-neutral-700 dark:text-neutral-400 text-start mt-[20px] ">
-              I'm Harsh, a Web Developer based in Ahmedabad, India, with a
+              I am Harsh, a Web Developer based in Ahmedabad, India, with a
               background in Software Development. I work with modern
               technologies like JavaScript and React.js to build user-friendly
               web applications.
